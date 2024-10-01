@@ -6,9 +6,7 @@ dotenv.config();
 
 const app = express();
 
-app.get("/products", (req, res) => {});
-
-console.log(process.env.MONGO_URI);
+app.post("/products", (req, res) => {});
 
 app.listen(1234, () => {
   connectDB();
