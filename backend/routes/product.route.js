@@ -1,4 +1,5 @@
-import express, { Router } from "express";
+import express from "express";
+
 import {
   createProduct,
   deleteProduct,
@@ -9,11 +10,8 @@ import {
 const router = express.Router();
 
 router.get("/", getProducts);
-
 router.post("/", createProduct);
-
 router.put("/:id", updateProduct);
-
 router.delete("/:id", deleteProduct);
 
-export default Router;
+export default router;
