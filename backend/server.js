@@ -5,6 +5,8 @@ import productRoutes from './routes/product.route.js'
 
 dotenv.config();
 
+// Server file.
+
 const app = express();
 
 app.use(express.json()); // allows us to accept JSON data in the req.body
